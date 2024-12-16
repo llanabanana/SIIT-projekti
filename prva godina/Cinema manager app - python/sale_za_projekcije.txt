@@ -1,0 +1,6 @@
+A1; Velika sala; 10; 15
+A2; Crvena sala; 8; 12
+A3; Plava sala; 5; 15
+B1; Zelena sala; 6; 10
+B2; Zuta sala; 9; 14
+B3; Narandzasta sala; 7; 11

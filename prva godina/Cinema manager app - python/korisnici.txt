@@ -1,0 +1,12 @@
+Lana;Mirkov;lanamirkov;lanamenadzer1;menadzer
+Milan;Bacic;milanbacic;mikica123;prodavac
+Andjela;Zivanovic;andjelazivanovic;andjela0707;kupac
+Ema;Mirkov;emke;ema2007;kupac
+Sandra;mirkov;sandram;sandra123;kupac
+Marko;Markovic;marko;m1a2rko;prodavac
+Nenad;Mirkov;nesha;nenad123;prodavac
+Iva;Ivic;ivka;ivaiva123;kupac
+Mila;Milic;milicka;mila2004;kupac
+Andrej;Andrejic;andrej001;12345678;kupac
+Nenad;Mirkov;nenad;nenad123;menadzer
+lenka;nikoliv;lenkic;lenka123;kupac

@@ -1,0 +1,13 @@
+Interstellar; Naucna Fantastika; 169; Christopher Nolan; Matthew McConaughey , Anne Hathaway , Jessica Chastain; SAD; 2014
+Parazit; Triler; 132; Bong Joon-ho; Song Kang-ho , Lee Sun-kyun , Cho Yeo-jeong; Juzna Koreja; 2019
+Dzoker;Triler;122;Todd Phillips;Joaquin Phoenix;Sad;2019
+Titanik;Drama; 195; James Cameron; Leonardo DiCaprio , Kate Winslet; SAD; 1997
+Egzorcista; Horor; 122; William Friedkin; Ellen Burstyn , Max von Sydow , Linda Blair; SAD; 1973
+La La Land; Mjuzikl; 128; Damien Chazelle; Ryan Gosling , Emma Stone; SAD; 2016
+Umri muski; Akcija; 132; John McTiernan; Bruce Willis , Alan Rickman; SAD; 1988
+Forest Gamp; Drama; 142; Robert Zemeckis; Tom Hanks , Robin Wright; SAD; 1994
+Vrisak; Horor; 111; Wes Craven; Neve Campbell , Courteney Cox , David Arquette; SAD; 1996
+Amelie; Komedija; 122; Jean-Pierre Jeunet; Audrey Tautou , Mathieu Kassovitz; Francuska; 2001
+Ko to tamo peva; Komedija; 86; Slobodan Sijan; Pavle Vuisic , Dragan Nikolic , Danilo Stojkovic; Jugoslavija; 1980
+Mi nismo andjeli; Komedija; 98; Srdjan Dragojevic; Nikola Kojo , Srdjan Todorovic , Milena Pavlovic; Srbija; 1992
+Zona Zamfirova; Drama; 104; Zdravko Sotra; Katariina Radivojevic, Aleksandar Marinkovic; Srbija; 2002

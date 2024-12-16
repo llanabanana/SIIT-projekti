@@ -1,0 +1,13 @@
+1111;A1;11:25;13:50;Ponedeljak, Sreda, Petak;Egzorcista;300
+1122;A2;02:15;05:15;Utorak, Cetvrtak, Subota;Vrisak;300
+1133;A3;18:00;20:25;Ponedeljak, Sreda, Petak;Parazit;250
+2222;B1;20:30;22:45;Utorak, Cetvrtak, Subota;Zona Zamfirova;350
+3333;B2;14:00;15:30;Ponedeljak, Sreda, Petak;Amelie;250
+4444;A2;18:00;19:40;Petak, Subota, Nedelja;Dzon Vik;350
+5555;B3;12:15;14:15;Cetvrtak, Nedelja;Dzoker;300
+1234;B2;12:15;15:00;Subota;Mi Nismo Andjeli;230
+1235;B3;17:15;20:00;Sreda;Umri Muski;280
+1236;A1;19:30;23:00;Utorak;Egzorcista;240
+1237;A2;10:15;13:50;Subota;La La Land;230
+2345;A1;9:00;11:20;Ponedeljak;Umri Muski;350
+6666;B2;13:00;15:00;Utorak;Ko To Tamo Peva;190
