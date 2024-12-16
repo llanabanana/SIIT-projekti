@@ -1,0 +1,12 @@
+1,Slobodna,Jednokrevetna,Klima
+2,Slobodna,Jednokrevetna,TV;MiniBar
+3,Slobodna,Dvokrevetna11,Klima
+4,Slobodna,Dvokrevetna2,Pusacka
+5,Slobodna,Trokrevetna,Balkon
+6,Slobodna,Dvokrevetna11,Klima;Balkon;Pusacka
+8,Slobodna,Dvokrevetna11,MiniBar;Pusacka
+9,Slobodna,Dvokrevetna2,TV;Klima
+10,Spremanje,Jednokrevetna,TV;MiniBar;Klima;Balkon;Pusacka
+11,Slobodna,Dvokrevetna11,MiniBar
+12,Slobodna,Dvokrevetna2,Klima;TV;MiniBar
+13,Slobodna,Jednokrevetna,null
