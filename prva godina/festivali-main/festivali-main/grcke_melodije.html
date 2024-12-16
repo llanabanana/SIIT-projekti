@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <title>Festival Grčke Melodije</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  
+    <style>
+    
+    
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  } 
+
+   </style>
+</head>
+<body>
+  <header>
+    <nav
+      class="navbar navbar-expand-lg custom-bg-color fixed-top"
+      data-bs-theme="light"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="images/logo.jpg"
+            alt="Festival logo"
+            width="65"
+            height="40"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Početna</a
+              >
+            </li>
+            
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Administratorske stranice
+              </a>
+              <ul class="dropdown-menu">
+                
+                <li><a class="dropdown-item" href="korisnici.html">Korisnici</a></li>
+                <li><a class="dropdown-item" href="organizatoria.html">Organizatori</a></li>
+                
+              </ul>
+            </li>
+
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Organizatori
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="beoartfest.html">BeoArt Fest</a></li>
+                <li><a class="dropdown-item" href="etnosrbija.html">Etno Srbija</a></li>
+                <li><a class="dropdown-item" href="lazarevacfest.html">Lazarevac Fest</a></li>
+                <li>
+                  <a class="dropdown-item" href="dunavskihorizonti.html">Dunavski Horizonti</a>
+                </li>
+                <li><a class="dropdown-item" href="urbanbeat.html">Urban Beat</a></li>
+                <li><a class="dropdown-item" href="garifest.html">Gari Fest</a></li>
+                <li>
+                  <a class="dropdown-item" href="etnofestbg.html">EtnoFest Beograd</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="bgurbanfest.html">Belgrade Urban Fest</a>
+                </li>
+                <li><a class="dropdown-item" href="nisfest.html">Niš Fest</a></li>
+              </ul>
+            </li>
+
+            
+
+          </ul>
+
+          <li class="nav-item d-flex" style="margin-right: 2%;">
+                          <a class="nav-link " aria-current="page" href="#"
+                            >Prijavi se</a
+                          >
+                        </li><li class="nav-item d-flex" style="margin-right: 2%;">
+                          <a class="nav-link " aria-current="page" href="#"
+                            >Registruj se</a
+                          >
+                        </li>
+
+
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <main class="container mt-5 pt-5">
+      <h1 class="text-center my-4">Festival Grčke Melodije</h1>
+      <p class="text-center fst-italic">
+        Otkrijte čaroliju Grčke kroz melodije koje diraju srce na našem festivalu grčke muzike - doživite jedinstven spoj tradicije, strasti i ljubavi prema muzici!
+      </p>
+      <div class="row text-center my-5">
+          <div class="col-12">
+              <div class="row gx-3 gy-2">
+                  <!-- Image thumbnails -->
+                  <div data-bs-toggle="modal" data-bs-target="#imageModal">
+                      <img src="https://i.imgur.com/LMOgMnP.jpeg" class="col-2 image-gallery" alt="Gallery Image 1">
+                      <img src="https://i.imgur.com/yBtIoEE.jpeg" class="col-2 image-gallery" alt="Gallery Image 2">
+                      <img src="https://i.imgur.com/aHRcuqe.jpeg" class="col-2 image-gallery" alt="Gallery Image 3">
+                      <img src="https://i.imgur.com/HxEZ2EO.jpeg" class="col-2 image-gallery" alt="Gallery Image 4">
+                      <img src="https://i.imgur.com/WhhEFXe.jpeg" class="col-2 image-gallery" alt="Gallery Image 5">
+                  </div>
+              </div>
+          </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Tip festivala</th>
+            <th>Prevoz</th>
+            <th>Cena</th>
+            <th>Maksimalan broj putnika</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Tip festivala">Muzički</td>
+            <td data-label="Prevoz">Autobus</td>
+            <td data-label="Cena">1500</td>
+            <td data-label="Maksimalan broj putnika">300</td>
+         
+          </tr>
+        </tbody>
+      </table>
+</main>
+  </main>
+  <footer class="custom-bg-color text-white py-4">
+      <div class="container py-1">
+          <div class="row">
+              <div class="col text-center">
+                  <p>&copy; 2024 Festivali Srbije. All rights reserved.</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- Image modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+              <div class="modal-body">
+                  <img src="" class="w-100" id="modalImage">
+              </div>
+          </div>
+      </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script>
+      document.querySelectorAll('.image-gallery').forEach(item => {
+          item.addEventListener('click', event => {
+              document.getElementById('modalImage').src = item.src;
+          });
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administratorska stranica - Organizatori</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg custom-bg-color fixed-top"
+        data-bs-theme="light"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/logo.jpg"
+              alt="Festival logo"
+              width="65"
+              height="40"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Početna</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Administratorske stranice
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="korisnici.html">Korisnici</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="organizatoria.html"
+                      >Organizatori</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <li class="nav-item d-flex" style="margin-right: 2%">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#loginModal"
+                >Prijavi se</a
+              >
+            </li>
+            <li class="nav-item d-flex" style="margin-right: 2%">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#registerModal"
+                >Registruj se</a
+              >
+            </li>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <table class="tabelaOrganizatori">
+        <thead>
+          <tr>
+            <th>Naziv</th>
+            <th>Adresa</th>
+            <th>Godina osnivanja</th>
+            <th>Telefon</th>
+            <th>Email</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Data will be populated here by JavaScript -->
+        </tbody>
+      </table>
+    </main>
+    <footer class="custom-bg-color text-white py-4">
+      <div class="container py-1">
+        <div class="row">
+          <div class="col text-center">
+            <p>&copy; 2024 Festivali Srbije. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="moj_js/firebase.js"></script>
+    <script src="moj_js/organizatori.js"></script>
+    <script src="moj_js/korisnici.js"></script>
+    <script>
+      function addPictureInput() {
+        const newPicInput = document.createElement("div");
+        newPicInput.className = "mb-3";
+        newPicInput.innerHTML = `
+              <label for="addPic" class="form-label">Link do slike</label>
+              <input type="text" class="form-control addPic" />
+          `;
+        document.getElementById("additionalPicInputs").appendChild(newPicInput);
+      }
+    </script>
+
+    <!-- Update Organizator Modal -->
+    <div
+      class="modal fade"
+      id="updateOrganizatorModal"
+      tabindex="-1"
+      aria-labelledby="updateOrganizatorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="updateOrganizatorModalLabel">
+              Izmeni Organizatora
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="updateOrganizatorForm">
+              <div class="mb-3">
+                <label for="updateNaziv" class="form-label">Naziv</label>
+                <input type="text" class="form-control" id="updateNaziv" />
+              </div>
+              <div class="mb-3">
+                <label for="updateAdresa" class="form-label">Adresa</label>
+                <input type="text" class="form-control" id="updateAdresa" />
+              </div>
+              <div class="mb-3">
+                <label for="updateGodinaOsnivanja" class="form-label"
+                  >Godina osnivanja</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="updateGodinaOsnivanja"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="updateKontaktTelefon" class="form-label"
+                  >Kontakt Telefon</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="updateKontaktTelefon"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="updateEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="updateEmail" />
+              </div>
+              <input type="hidden" id="updateOrganizatorId" />
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Odustani
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick="saveOrganizator()"
+            >
+              Sacuvaj
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add Festival Modal -->
+    <div
+      class="modal fade"
+      id="addFestivalModal"
+      tabindex="-1"
+      aria-labelledby="addFestivalModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addFestivalModalLabel">
+              Dodaj Festival
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="addFestivalForm">
+              <div class="mb-3">
+                <label for="addFestivalOrganizatorId" class="form-label"
+                  >Organizator</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="addFestivalOrganizatorId"
+                  readonly
+                />
+              </div>
+              <div class="mb-3">
+                <label for="addNaziv" class="form-label">Naziv</label>
+                <input type="text" class="form-control" id="addNaziv" />
+              </div>
+              <div class="mb-3">
+                <label for="addOpis" class="form-label">Opis</label>
+                <textarea class="form-control" id="addOpis" rows="5"></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="addTip" class="form-label">Tip</label>
+                <select class="form-control" id="addTip">
+                  <option value="Muzički">Muzički</option>
+                  <option value="Umetnički">Umetnički</option>
+                  <option value="Filmski">Filmski</option>
+                  <option value="Edukativni">Edukativni</option>
+                  <option value="Gastronomski">Gastronomski</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="addPrevoz" class="form-label">Prevoz</label>
+                <select class="form-control" id="addPrevoz">
+                  <option value="Autobus">Autobus</option>
+                  <option value="Avion">Avion</option>
+                  <option value="Sopstveni">Sopstveni</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="addMaxPutnika" class="form-label"
+                  >Maksimalan broj osoba</label
+                >
+                <input type="number" class="form-control" id="addMaxPutnika" />
+              </div>
+              <div class="mb-3">
+                <label for="addCena" class="form-label">Cena</label>
+                <input type="number" class="form-control" id="addCena" />
+              </div>
+
+              <div class="mb-3">
+                <label for="addPic" class="form-label">Link do slike</label>
+                <input type="text" class="form-control addPic" />
+              </div>
+              <div id="additionalPicInputs"></div>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                onclick="addPictureInput()"
+              >
+                Dodaj još slika
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="addFestivalToOrganizator()"
+              >
+                Dodaj
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delete Festival Modal -->
+    <div
+      class="modal fade"
+      id="deleteFestivalModal"
+      tabindex="-1"
+      aria-labelledby="deleteFestivalModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="deleteFestivalModalLabel">
+              Potvrda brisanja
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="deleteFestivalMessage">
+              Da li ste sigurni da želite obrisati festival?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              NE
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              onclick="confirmDeleteFestival()"
+            >
+              DA
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delete Organizator Modal -->
+    <div
+      class="modal fade"
+      id="deleteOrganizatorModal"
+      tabindex="-1"
+      aria-labelledby="deleteOrganizatorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="deleteOrganizatorModalLabel">
+              Potvrda brisanja
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p id="deleteOrganizatorMessage">
+              Da li ste sigurni da želite obrisati organizatora?
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              NE
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              onclick="confirmDeleteOrganizator()"
+            >
+              DA
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div
+      class="modal fade"
+      id="registerModal"
+      tabindex="-1"
+      aria-labelledby="registerModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="registerModalLabel">Registruj se</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="registerForm">
+              <div class="mb-3">
+                <label for="registerEmail" class="form-label"
+                  >Email adresa</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="registerEmail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerUsername" class="form-label"
+                  >Korisničko ime</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="registerUsername"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerPassword" class="form-label">Lozinka</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="registerPassword"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerConfirmPassword" class="form-label"
+                  >Potvrdi lozinku</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="registerConfirmPassword"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerAddress" class="form-label">Adresa</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="registerAddress"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerDateOfBirth" class="form-label"
+                  >Datum rođenja</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  id="registerDateOfBirth"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerFirstName" class="form-label">Ime</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="registerFirstName"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerLastName" class="form-label">Prezime</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="registerLastName"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="registerPhoneNumber" class="form-label"
+                  >Broj telefona</label
+                >
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="registerPhoneNumber"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Registruj se
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      tabindex="-1"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Prijavi se</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="loginForm">
+              <div class="mb-3">
+                <label for="loginEmail" class="form-label">Email adresa</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="loginEmail"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label">Lozinka</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="loginPassword"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Prijavi se</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

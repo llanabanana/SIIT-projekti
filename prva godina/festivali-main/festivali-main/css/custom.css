@@ -1,0 +1,213 @@
+.custom-bg-color {
+  background-color: #a081d3;
+}
+.navbar-brand {
+  background-color: transparent !important;
+}
+h1 {
+  font-family: "Arial", sans-serif; /* Specify your desired font-family */
+  font-size: 3rem; /* Adjust the font size */
+  color: #6b4c94; /* Set the text color */
+  text-align: center; /* Center align the text */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add letter-spacing */
+  margin-top: 20px; /* Add top margin */
+  margin-bottom: 10px;
+}
+.prvi_p {
+  font-family: "Arial", sans-serif; /* Specify your desired font-family */
+  font-size: 1rem; /* Adjust the font size */
+  color: #725597; /* Set the text color */
+  text-align: center; /* Center align the text */
+
+  letter-spacing: 1px; /* Add letter-spacing */
+  margin-top: 1px; /* Add top margin */
+  margin-bottom: 25px;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden; /* Ensures the image doesn't overflow the card */
+  transition: box-shadow 0.3s; /* Smooth transition */
+}
+
+.card:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+}
+
+.card-body {
+  padding: 20px;
+  text-decoration: none;
+}
+
+.card-title {
+  color: #422079;
+  margin-bottom: 0;
+  font-size: 1.8rem;
+}
+
+.card-text {
+  color: #5e3685; /* Text color */
+  font-size: 1.1rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 180px; /* Adjust the height as needed */
+  object-fit: cover;
+}
+.card a {
+  text-decoration: none; /* Remove underline from anchor tags within cards */
+  color: inherit; /* Inherit color from parent (to maintain card text color) */
+}
+.custom-btn {
+  
+  background-color: #a081d3; /* Replace 'your_hex_color' with your desired color */
+  border-radius: 10px; /* Adjust the border radius as needed */
+  margin-right: 5px;
+  color: white;
+}
+.btn.custom-btn:hover {
+  background-color: #684790;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+.custom-bootstrap-btn {
+  margin-left: 20px;
+  white-space: nowrap; /* Prevents text wrapping */
+  color: white;
+}
+.image-gallery {
+  cursor: pointer;
+  transition: transform .2s;
+  height: 100px; /* Fixed height for all images */
+  object-fit: cover; /* Ensures the images are cropped to fit */
+}
+.image-gallery:hover {
+  transform: scale(1.1);
+}
+.info-column {
+  font-size: 1.2rem; /* Larger font size for readability */
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 80px;
+  margin-bottom: 100px;
+ 
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #dccbe9;
+}
+th {
+  font-weight: bold;
+}
+tr:nth-child(even) {
+  background-color: #f1daf5;
+}
+@media only screen and (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  th {
+    display: none;
+  }
+  tr {
+    margin-bottom: 10px;
+    border: 1px solid #edbaf3;
+  }
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+  }
+  td:before {
+    position: absolute;
+    left: 6px;
+    content: attr(data-label);
+    font-weight: bold;
+  }
+
+}
+
+.etno-h1 {
+  font-family: "Raleway", sans-serif; /* Specify your desired font-family */
+  font-size: 6rem; /* Adjust the font size */
+  color: #6b4c94; /* Set the text color */
+  text-align: center; /* Center align the text */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add letter-spacing */
+  margin-top: 100px; /* Add top margin */
+  margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .etno-h1 {
+    font-size: 2rem; /* Adjust the font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .etno-h1 {
+    font-size: 1.5rem; /* Further adjust the font size for even smaller screens */
+  }
+}
+.card-img-top.etno {
+  width: 100%;
+  height: 220px; /* Adjust the height as needed */
+  object-fit: cover;
+}
+.btn.btn-primary {
+  background-color: #a081d3;
+  border-color: #6b4c94;
+  color: rgb(255, 255, 255);
+}
+
+/* Hover effect */
+.btn.btn-primary:hover {
+  background-color: #6b4c94;
+}
+.image-gallery {
+  cursor: pointer;
+  transition: transform 0.2s;
+  width: 250px;
+  height: 150px;
+}
+.admin-form
+{
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+h2 {
+  font-family: "Arial", sans-serif; /* Specify your desired font-family */
+  font-size: 2rem; /* Adjust the font size */
+  color: #6b4c94; /* Set the text color */
+  text-align: left; /* Center align the text */
+  text-transform: uppercase; /* Convert text to uppercase */
+  letter-spacing: 2px; /* Add letter-spacing */
+  margin-top: 20px; /* Add top margin */
+  margin-bottom: 10px;
+}
+
+a {
+  color: #6b4c94;
+  text-decoration: none;
+}
+
+.p-card {
+  font-family: "Arial", sans-serif; /* Specify your desired font-family */
+  font-size: 1rem; /* Adjust the font size */
+  color: #725597; /* Set the text color */
+  text-align: left; /* Center align the text */
+  letter-spacing: 1px; /* Add letter-spacing */
+  margin-top: 3px; /* Add top margin */
+  margin-bottom: 5px;
+}
+
+
+
+.container-padding {
+  padding-top: 50px;
+}
