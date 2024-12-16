@@ -1,24 +1,25 @@
-1,milicamilic@gmail.com,2024-05-11,2024-05-25,Dvokrevetna2,4,Prosla,Dorucak;Rucak;Vecera;SPA centar;Bazen,101263.4,2024-04-04,Potvrdjena
-2,milicamilic@gmail.com,2024-07-01,2024-07-15,Jednokrevetna,0,Potvrdjena,Dorucak;SPA centar,72431.2,2024-06-25,Potvrdjena
-3,milicamilic@gmail.com,2024-06-10,2024-06-24,Trokrevetna,5,Prosla,Dorucak;Vecera,85324.1,2024-06-01,Potvrdjena
-4,milicamilic@gmail.com,2024-02-10,2024-02-24,Jednokrevetna,1,Prosla,Dorucak;Vecera;SPA centar,106531.9,2024-02-01,Potvrdjena
-5,milicamilic@gmail.com,2024-04-05,2024-04-18,Dvokrevetna2,4,Prosla,Dorucak;Rucak;Bazen,78901.0,2024-03-15,Potvrdjena
-6,ana.anic@gmail.com,2024-02-05,2024-02-20,Jednokrevetna,1,Prosla,Dorucak;SPA centar;Bazen,104321.0,2024-01-01,Potvrdjena
-7,ana.anic@gmail.com,2024-03-15,2024-03-30,Dvokrevetna2,4,Prosla,Dorucak;Vecera,91924.3,2024-02-01,Potvrdjena
-8,ana.anic@gmail.com,2024-05-10,2024-05-25,Jednokrevetna,1,Prosla,Dorucak;Vecera;Bazen,89382.1,2024-02-01,Potvrdjena
-9,ana.anic@gmail.com,2024-07-10,2024-07-25,Jednokrevetna,0,Potvrdjena,Rucak;Vecera;SPA centar,88923.7,2024-07-01,Potvrdjena
-10,ana.anic@gmail.com,2024-01-10,2024-01-25,Jednokrevetna,1,Prosla,Dorucak;SPA centar;Bazen,81500.0,2023-12-25,Potvrdjena
-11,milicamilic@gmail.com,2024-03-01,2024-03-15,Dvokrevetna2,0,Prosla,Dorucak;Vecera;Bazen,82000.0,2024-02-20,Potvrdjena
-12,ana.anic@gmail.com,2024-06-01,2024-06-15,Trokrevetna,5,Prosla,Rucak;Vecera;SPA centar,88000.0,2024-05-20,Potvrdjena
-13,milicamilic@gmail.com,2024-04-01,2024-04-15,Jednokrevetna,1,Prosla,Dorucak;Rucak;Vecera,83000.0,2024-03-15,Potvrdjena
-14,ana.anic@gmail.com,2024-05-20,2024-06-05,Dvokrevetna2,4,Prosla,Dorucak;SPA centar;Bazen,85000.0,2024-05-01,Potvrdjena
-15,milicamilic@gmail.com,2024-05-11,2024-05-25,Dvokrevetna2,0,Otkazana,Dorucak;Rucak;Vecera;SPA centar;Bazen,101263.4,2024-04-04,Otkazana
-16,ana.anic@gmail.com,2024-07-01,2024-07-15,Jednokrevetna,0,Otkazana,Dorucak;SPA centar,72431.2,2024-06-25,Otkazana
-17,milicamilic@gmail.com,2024-06-10,2024-06-24,Trokrevetna,0,Otkazana,Dorucak;Vecera,85324.1,2024-06-01,Otkazana
-18,ana.anic@gmail.com,2024-02-10,2024-02-24,Jednokrevetna,0,Otkazana,Dorucak;Vecera;SPA centar,106531.9,2024-02-01,Otkazana
-19,milicamilic@gmail.com,2024-04-05,2024-04-18,Dvokrevetna2,0,Otkazana,Dorucak;Rucak;Bazen,78901.0,2024-03-15,Otkazana
-20,ana.anic@gmail.com,2024-02-05,2024-02-20,Jednokrevetna,0,Otkazana,Dorucak;SPA centar;Bazen,104321.0,2024-01-01,Otkazana
-21,milicamilic@gmail.com,2024-03-03,2024-04-04,Jednokrevetna,0,Odbijena,Dorucak,0.0,2024-07-03,Odbijena
-22,milicamilic@gmail.com,2024-10-12,2024-11-01,Dvokrevetna11,0,NaCekanju,Dorucak;Vecera;Masaza;Bilijar,95660.0,2024-07-03,NaCekanju
-23,ana.anic@gmail.com,2024-08-12,2024-08-20,Trokrevetna,0,Potvrdjena,Dorucak;Rucak;SPA centar;Bilijar,90662.0,2024-07-03,Potvrdjena
-24,hanahanic@gmail.com,2024-07-30,2024-08-10,Dvokrevetna11,0,NaCekanju,Dorucak;Vecera,67244.1,2024-07-03,NaCekanju
+1,milicamilic@gmail.com,2024-03-03,2024-04-04,Jednokrevetna,0,Odbijena,Dorucak,0.0,2024-07-03,Odbijena
+2,milicamilic@gmail.com,2024-10-12,2024-11-01,Dvokrevetna11,0,Odbijena,Dorucak;Vecera;Masaza;Bilijar,0.0,2024-12-16,Odbijena
+3,hanahanic@gmail.com,2024-07-30,2024-08-10,Dvokrevetna11,0,Odbijena,Dorucak;Vecera,0.0,2024-12-16,Odbijena
+4,milicamilic@gmail.com,2024-07-01,2024-07-15,Jednokrevetna,0,Potvrdjena,Dorucak;SPA centar,72431.2,2024-06-25,Potvrdjena
+5,ana.anic@gmail.com,2024-07-01,2024-07-15,Jednokrevetna,0,Otkazana,Dorucak;SPA centar,72431.2,2024-06-25,Otkazana
+6,milicamilic@gmail.com,2024-04-05,2024-04-18,Dvokrevetna2,4,Prosla,Dorucak;Rucak;Bazen,78901.0,2024-03-15,Potvrdjena
+7,milicamilic@gmail.com,2024-04-05,2024-04-18,Dvokrevetna2,0,Otkazana,Dorucak;Rucak;Bazen,78901.0,2024-03-15,Otkazana
+8,ana.anic@gmail.com,2024-01-10,2024-01-25,Jednokrevetna,1,Prosla,Dorucak;SPA centar;Bazen,81500.0,2023-12-25,Potvrdjena
+9,milicamilic@gmail.com,2024-03-01,2024-03-15,Dvokrevetna2,0,Prosla,Dorucak;Vecera;Bazen,82000.0,2024-02-20,Potvrdjena
+10,milicamilic@gmail.com,2024-04-01,2024-04-15,Jednokrevetna,1,Prosla,Dorucak;Rucak;Vecera,83000.0,2024-03-15,Potvrdjena
+11,ana.anic@gmail.com,2024-05-20,2024-06-05,Dvokrevetna2,4,Prosla,Dorucak;SPA centar;Bazen,85000.0,2024-05-01,Potvrdjena
+12,milicamilic@gmail.com,2024-06-10,2024-06-24,Trokrevetna,5,Prosla,Dorucak;Vecera,85324.1,2024-06-01,Potvrdjena
+13,milicamilic@gmail.com,2024-06-10,2024-06-24,Trokrevetna,0,Otkazana,Dorucak;Vecera,85324.1,2024-06-01,Otkazana
+14,ana.anic@gmail.com,2024-06-01,2024-06-15,Trokrevetna,5,Prosla,Rucak;Vecera;SPA centar,88000.0,2024-05-20,Potvrdjena
+15,ana.anic@gmail.com,2024-07-10,2024-07-25,Jednokrevetna,0,Potvrdjena,Rucak;Vecera;SPA centar,88923.7,2024-07-01,Potvrdjena
+16,ana.anic@gmail.com,2024-05-10,2024-05-25,Jednokrevetna,1,Prosla,Dorucak;Vecera;Bazen,89382.1,2024-02-01,Potvrdjena
+17,ana.anic@gmail.com,2024-08-12,2024-08-20,Trokrevetna,5,Prosla,Dorucak;Rucak;SPA centar;Bilijar,90662.0,2024-07-03,Potvrdjena
+18,ana.anic@gmail.com,2024-03-15,2024-03-30,Dvokrevetna2,4,Prosla,Dorucak;Vecera,91924.3,2024-02-01,Potvrdjena
+19,milicamilic@gmail.com,2024-05-11,2024-05-25,Dvokrevetna2,4,Prosla,Dorucak;Rucak;Vecera;SPA centar;Bazen,101263.4,2024-04-04,Potvrdjena
+20,milicamilic@gmail.com,2024-05-11,2024-05-25,Dvokrevetna2,0,Otkazana,Dorucak;Rucak;Vecera;SPA centar;Bazen,101263.4,2024-04-04,Otkazana
+21,ana.anic@gmail.com,2024-02-05,2024-02-20,Jednokrevetna,1,Prosla,Dorucak;SPA centar;Bazen,104321.0,2024-01-01,Potvrdjena
+22,ana.anic@gmail.com,2024-02-05,2024-02-20,Jednokrevetna,0,Otkazana,Dorucak;SPA centar;Bazen,104321.0,2024-01-01,Otkazana
+23,milicamilic@gmail.com,2024-02-10,2024-02-24,Jednokrevetna,1,Prosla,Dorucak;Vecera;SPA centar,106531.9,2024-02-01,Potvrdjena
+24,ana.anic@gmail.com,2024-02-10,2024-02-24,Jednokrevetna,0,Otkazana,Dorucak;Vecera;SPA centar,106531.9,2024-02-01,Otkazana
+25,hanahanic@gmail.com,2024-12-16,2024-12-26,Dvokrevetna2,0,Otkazana,Vecera;Masaza;Bilijar,39665.0,2024-12-16,Otkazana
